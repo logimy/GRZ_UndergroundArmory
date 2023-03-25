@@ -5,10 +5,10 @@ module Base
 		  Base
 	  }
 
-    item GRZ_SpikedMetalPipe
+    item GRZ_TestPipe
     {
         DisplayCategory = Weapon,
-        MaxRange	=	1.2,
+        MaxRange	=	1.5,
         WeaponSprite	=	GRZ_SpikedMetalPipeModel,
         MinAngle	=	0.72,
         Type	=	Weapon,
@@ -25,7 +25,7 @@ module Base
         MaxHitCount	=	2,
         DoorDamage	=	1000,
         SwingAnim	=	Bat,
-        DisplayName	=	Spiked Metal Pipe,
+        DisplayName	=	Test Pipe,
         MinRange	=	0.61,
         SwingTime	=	2,
         KnockdownMod	=	0,
@@ -43,7 +43,7 @@ module Base
         CritDmgMultiplier = 2,
         MinDamage	=	1000,
         MaxDamage	=	1000,
-        BaseSpeed = 0.95,
+        BaseSpeed = 5.95,
         WeaponLength = 0.35,
         AttachmentType = BigWeapon,
 	  }
