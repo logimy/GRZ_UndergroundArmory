@@ -1,0 +1,36 @@
+module Base
+{
+  sound test_attack
+	{	category = World,
+		clip
+		{
+			file = media/sound/test_attack.ogg,
+			distanceMin = 0,
+			distanceMax = 10,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.5,
+	}	}
+  sound test_hit
+	{	category = World,
+		clip
+		{
+			file = media/sound/test_hit.ogg,
+			distanceMin = 0,
+			distanceMax = 10,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.5,
+	}	}
+  sound test_break
+	{	category = World,
+		clip
+		{
+			file = media/sound/test_break.ogg,
+			distanceMin = 0,
+			distanceMax = 10,
+			reverbMaxRange = 0,
+			reverbFactor = 0,
+			volume = 0.5,
+	}	}
+}
