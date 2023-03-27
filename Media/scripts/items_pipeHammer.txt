@@ -22,7 +22,7 @@ module Base
       SplatNumber	=	1,
       PushBackMod	=	0.5,
       SubCategory	=	Swinging,
-      ConditionMax	=	10,
+      ConditionMax	=	15,
       MaxHitCount	=	1,
       DoorDamage	=	14,
       CanBarricade	=	TRUE,
@@ -62,5 +62,16 @@ module Base
         offset = 0.0000 0.1530 0.0000,
         rotate = 0.0000 0.0000 0.0000,
       }
+    }
+
+    fixing Fix GRZ_PipeHammer
+    {
+      Require : GRZ_PipeHammer,
+      GlobalItem : BlowTorch=2,
+      ConditionModifier : 4,
+
+      Fixer : ScrapMetal=2; MetalWelding=2,
+      Fixer : MetalPipe; MetalWelding=1,
+      Fixer : SmallSheetMetal=2,
     }
 }
