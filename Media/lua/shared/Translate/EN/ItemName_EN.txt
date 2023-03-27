@@ -1,0 +1,4 @@
+ItemName_UA = {
+	ItemName_Base.GRZ_PipeHammer = "Pipe Hammer",
+	
+}
