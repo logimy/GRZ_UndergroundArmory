@@ -1,0 +1,69 @@
+module Base
+{
+	imports
+    {
+		  Base
+	  }
+	item GRZ_PipeAxe
+	  {
+      DisplayCategory = ToolWeapon,
+      MaxRange	=	1.35,
+      WeaponSprite	=	GRZ_PipeAxeModel,
+      MinAngle	=	0.8,
+      Type	=	Weapon,
+      MinimumSwingTime	=	0.5,
+      KnockBackOnNoDeath	=	TRUE,
+      SwingAmountBeforeImpact	=	0.002,
+      Categories	=	Axe,
+      ConditionLowerChanceOneIn	=	25,
+      Weight	=	3,
+      SplatNumber	=	3,
+      PushBackMod	=	0.3,
+      EnduranceMod	=	3,
+      SubCategory	=	Swinging,
+      ConditionMax	=	15,
+      MaxHitCount	=	3,
+      DoorDamage	=	55,
+      IdleAnim	=	Idle_Weapon2,
+      SwingAnim	=	Heavy,
+      DisplayName	=	Pipe Axe,
+      MinRange	=	0.61,
+      SwingTime	=	0.5,
+      HitAngleMod	=	-30,
+      SplatSize	=	5,
+      KnockdownMod	=	3,
+      SplatBloodOnNoDeath	=	TRUE,
+      Icon	=	pipeAxe,
+      RunAnim	=	Run_Weapon2,
+      TwoHandWeapon = TRUE,
+      SwingSound = WoodAxeSwing,
+      DoorHitSound = WoodAxeHit,
+      HitSound = WoodAxeHit,
+      HitFloorSound = WoodAxeHit,
+      BreakSound = WoodAxeBreak,
+      TreeDamage  =   55,
+      MetalValue = 120,
+      CriticalChance	=	50,
+      CritDmgMultiplier = 12,
+      MinDamage	=	1.3,
+      MaxDamage	=	3,
+      BaseSpeed = 1,
+      WeaponLength = 0.5,
+      RequiresEquippedBothHands = TRUE,
+      DamageCategory = Slash,
+      DamageMakeHole = TRUE,
+      AttachmentType = BigBlade,
+      Tags = ChopTree;CutPlant,
+    }
+	model GRZ_PipeAxeModel
+	{
+		mesh = weapons/2handed/GRZ_PipeAxe2,
+		texture = weapons/2handed/GRZ_PipeAxeTex,
+
+		attachment world
+		{
+			offset = 0.0000 0.1530 0.0000,
+			rotate = -180.0000 0.0000 180.0000,
+		}
+	}
+}
