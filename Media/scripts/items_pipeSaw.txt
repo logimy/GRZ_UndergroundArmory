@@ -1,0 +1,46 @@
+module Base
+{
+  imports
+  {
+    Base
+  }
+
+  item GRZ_PipeSaw
+  {
+    DisplayCategory = Tool,
+    Weight	=	1.2,
+    Type	=	Normal,
+    DisplayName	=	Pipe Saw,
+    Icon	=	pipeSaw,
+    MetalValue = 35,
+    StaticModel = GRZ_PipeSawModel,
+    SurvivalGear = TRUE,
+    Tags = Saw,
+    WorldStaticModel = GRZ_PipeSawModelGround,
+  }
+
+  model GRZ_PipeSawModelGround
+	{
+		mesh = tools/GRZ_PipeSawGround,
+		texture = tools/GRZ_PipeSawTex,
+		scale = 0.4,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = -180.0000 0.0000 180.0000,
+		}
+	}
+
+  model GRZ_PipeSawModel
+	{
+		mesh = tools/GRZ_PipeSaw,
+    texture = tools/GRZ_PipeSawTex,
+
+		attachment world
+		{
+			offset = 0.0000 0.2350 0.0150,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

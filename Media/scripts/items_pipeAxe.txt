@@ -57,7 +57,7 @@ module Base
     }
 	model GRZ_PipeAxeModel
 	{
-		mesh = weapons/2handed/GRZ_PipeAxe2,
+		mesh = weapons/2handed/GRZ_PipeAxe,
 		texture = weapons/2handed/GRZ_PipeAxeTex,
 
 		attachment world
