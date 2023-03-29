@@ -22,7 +22,7 @@ module Base
   model GRZ_PipeSawModelGround
 	{
 		mesh = tools/GRZ_PipeSawGround,
-		texture = tools/GRZ_PipeSawTex,
+		texture = tools/GRZ_PipeSawTex_AlphaSpikes,
 		scale = 0.4,
 
 		attachment world
@@ -35,7 +35,7 @@ module Base
   model GRZ_PipeSawModel
 	{
 		mesh = tools/GRZ_PipeSaw,
-    texture = tools/GRZ_PipeSawTex,
+    texture = tools/GRZ_PipeSawTex_AlphaSpikes,
 
 		attachment world
 		{
