@@ -1,0 +1,67 @@
+module Base
+{
+	imports
+  {
+    Base
+  }
+	item GRZ_Shiv
+  {
+    DisplayCategory = WeaponCrafted,
+    MaxRange	=	0.85,
+    WeaponSprite	=	GRZ_ShivModel,
+    MinAngle	=	0.65,
+    Type	=	Weapon,
+    MinimumSwingTime	=	2,
+    KnockBackOnNoDeath	=	FALSE,
+    SwingAmountBeforeImpact	=	0.02,
+    Categories	=	SmallBlade,
+    ConditionLowerChanceOneIn	=	7,
+    Weight	=	0.75,
+    SplatNumber	=	4,
+    PushBackMod	=	0.3,
+    SubCategory	=	Stab,
+    AimingMod	=	0.8,
+    ConditionMax	=	6,
+    MaxHitCount	=	1,
+    IsAimedHandWeapon	=	TRUE,
+    DoorDamage	=	1,
+    SwingAnim	=	Stab,
+    DisplayName	=	Shiv,
+    MinRange	=	0.61,
+    CloseKillMove = Jaw_Stab,
+    SwingTime	=	2,
+    KnockdownMod	=	0,
+    SplatBloodOnNoDeath	=	TRUE,
+    Icon	=	shiv,
+    RunAnim	=	Run_Weapon2,
+    IdleAnim	=	Idle_Weapon2,
+    TreeDamage  =   2,
+    BreakSound  =   StoneKnifeBreak,
+    EnduranceMod = 0.5,
+    CriticalChance	=	20,
+    CritDmgMultiplier = 2,
+    MinDamage	=	0.4,
+    MaxDamage	=	0.6,
+    WeaponLength = 0.25,
+    DamageCategory = Slash,
+    DamageMakeHole = TRUE,
+    HitFloorSound	=	StoneKnifeHit,
+    ImpactSound	=	StoneKnifeHit,
+    DoorHitSound = StoneKnifeHit,
+    HitSound	=	StoneKnifeHit,
+    SwingSound = StoneKnifeSwing,
+    AttachmentType = Screwdriver,
+    Tags = SharpKnife,
+  }
+	model GRZ_ShivModel
+	{
+		mesh = weapons/1Handed/GRZ_Shiv,
+		texture = weapons/1handed/GRZ_ShivTex,
+
+		attachment world
+		{
+			offset = 0.0000 0.0600 -0.0040,
+			rotate = 0.0000 0.0000 180.0000,
+		}
+	}
+}

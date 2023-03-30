@@ -5,7 +5,6 @@ module Base
 		  Base
 	  }
 
-    /** Test Pipe 1Handed **/
     item GRZ_TestPipe
     {
         DisplayCategory = Weapon,
